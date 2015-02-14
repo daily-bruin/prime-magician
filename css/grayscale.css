@@ -138,12 +138,23 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    /*background: url(../img/magiccastle-FR.jpg);*/
+    background: rgb(255,255,255);
+    background-attachment: fixed;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
+}
+
+.intro .intro-inner {
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px 30px; 
+    position: relative;
+    float: left; 
+    width:60%;
 }
 
 .intro .intro-body {
