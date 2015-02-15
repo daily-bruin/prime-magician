@@ -26,7 +26,7 @@ blockquote {
 
 #page1 { 
 	background:url('../img/slide1.jpg');
-	background-size: 100%;
+	/*background-size: 100%;*/
 	z-index:1;
 }
 
@@ -76,6 +76,33 @@ blockquote {
 	height: 110px;
 	color: black;
 	background: url(../img/cloud2.png);
+	background-size:100%;
+	z-index: 10;
+}
+
+.cloud3 {
+	width: 110px;
+	height: 110px;
+	color: black;
+	background: url(../img/cloud4.png);
+	background-size:100%;
+	z-index: 10;
+}
+
+.castle1 {
+	width: 200px;
+	height: 200px;
+	color: black;
+	background: url(../img/castle1.png);
+	background-size:100%;
+	z-index: 10;
+}
+
+.castle2 {
+	width: 200px;
+	height: 200px;
+	color: black;
+	background: url(../img/castle5.png);
 	background-size:100%;
 	z-index: 10;
 }
