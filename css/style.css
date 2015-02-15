@@ -35,6 +35,10 @@ blockquote {
 	z-index:2; 
 	border-radius:50%;
 
+	-moz-animation-duration: 2s;
+  -moz-animation-delay: 1.5s;
+  -moz-animation-iteration-count: 2;
+
 }
 
 #wow1 {

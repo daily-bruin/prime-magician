@@ -50,7 +50,7 @@
 
 			data-300="width[swing]:0px; height[swing]:0px; border: none;"
 			data-750="width:450px; height:450px; border[swing]: 8px solid white"
-			data-1000="border: 10px solid red">
+			data-1300="border: 10px solid red">
 
 			<div id="wow1"
 				data-600="display: none;" 
@@ -67,14 +67,18 @@
 		<!-- <div id="page2" class="centered" data-1300="width:0%;" data-2000="width:100%;"></div> -->
 
 		<div id="page2" class="centered" 
-			data-1300=" width:0px; height:0px; margin-bottom:0px; margin-left:640px; " 
+			data-1400=" width:0px; height:0px; margin-bottom:0px; margin-left:640px; " 
 			data-2000=" width:3000px; height:3000px; margin-top:-1500px; margin-left:-1500px; ">
 		</div>
 
 		<div id="page3" class="centered" 
 			data-1900="display:none;" 
-			data-2000="display:block;">
-			<div class="page-black centered" style="padding-left: 10%; padding-right: 30%; padding-top: 10%;">
+			data-2000="display:block;"
+			data-2500="background-color[swing]: white;"
+			data-3500="background-color: black; ">
+			<div class="page-black centered" style="padding-left: 10%; padding-right: 30%; padding-top: 10%;"
+				data-2500="color: black;"
+				data-3500="color: white;">
 				<p>
           Settled on a hilltop just blocks away from Hollywood Boulevard, the Magic Castle is a relic of the mysteries of the entertainment industry's gilded age.
 
@@ -114,7 +118,7 @@
 
 
 		<!-- <div id="info" class="centered "  data-900="box-shadow:inset 0px 0 0 #e7685d,inset 0px 0 0  #e7685d" data-1000="box-shadow:inset 100px 0 0 #e7685d, inset -100px 0 0 #e7685d" data-1830="width:150px;" data-2000="width:0;">Scroll !</div> -->
-		<div id="footer">asdfasdfadsf</div>
+		<div id="footer">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
 	</div>
 
 
@@ -140,6 +144,15 @@
 	    } else {
 	        $('#wow1').fadeOut('fast');
 	    }
+		});
+		$(window).scroll(function() {
+	    if ($(this).scrollTop() > 1300) {
+	    		// $('#wow1').addClass(" animated fadeInUp ");
+	        $('#page1-d').fadeOut('slow');
+	    } else {
+	    	$('#page1-d').fadeIn('fast');
+	    }
+	    
 		});
 	</script>
 </body>
