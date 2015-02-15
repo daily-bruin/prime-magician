@@ -7,6 +7,11 @@ body {overflow:auto; height:7600px; }
 
 .centered { top:0; bottom:0; left:0; right:0; margin:auto; }
 
+blockquote {
+	font-size: 1.2 em;
+	border: none;
+}
+
 .page-white {
 	color: white;
 	padding-top: 25%;
@@ -30,6 +35,12 @@ body {overflow:auto; height:7600px; }
 	z-index:2; 
 	border-radius:50%;
 
+}
+
+#wow1 {
+	-moz-animation-duration: 2s;
+  -moz-animation-delay: 1.5s;
+  -moz-animation-iteration-count: 2;
 }
 
 #page2 {
