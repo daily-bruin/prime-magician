@@ -62,5 +62,31 @@ blockquote {
 	z-index:4;
 }
 
+.cloud {
+	width: 100px;
+	height: 100px;
+	color: black;
+	background: url(../img/cloud1.png);
+	background-size:100%;
+	z-index: 10;
+}
+
+.cloud2 {
+	width: 110px;
+	height: 110px;
+	color: black;
+	background: url(../img/cloud2.png);
+	background-size:100%;
+	z-index: 10;
+}
+
+/*.sun1 {
+	width: 110px;
+	height: 110px;
+	color: black;
+	background: url(../img/sun1.png);
+	background-size:100%;
+	z-index: 10;
+}*/
 
 #footer {font-size:12px;  z-index:10;bottom:10px; width:100%;}
