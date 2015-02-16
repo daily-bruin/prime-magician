@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic|Open+Sans:800);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Open+Sans:800);
 
 html, body {padding:0;margin:0; text-align:center; font-family: 'Merriweather', serif; font-size: 1em;}
 a {text-decoration:none}
@@ -150,7 +150,7 @@ body {overflow:auto; height:7500px; }
 	background-attachment: fixed;
 	height:375px;
 	background-size: 100%;
-	z-index:1000;
+	z-index:10;
 }
 
 .cloud1 {
@@ -267,7 +267,7 @@ body {overflow:auto; height:7500px; }
 }
 
 .credit1 {
-	bottom: 8%;
+	
 	right: 0;
 	background-color: whitesmoke;
 	color: black;
@@ -279,13 +279,17 @@ body {overflow:auto; height:7500px; }
 	}
 
 .credit2 {
-	bottom: 2%;
+	bottom: 3%;
 	right: 0;
 	background-color: whitesmoke;
 	color: black;
-	padding: 2px;
-	font-size: 0.7em;
+	padding: 5px;
+	font-size: 0.3em;
 }
+	.credit2 p {
+		position: relative;
+		top: 5px;
+	}
 	
 
 /*.sun1 {
