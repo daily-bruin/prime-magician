@@ -89,7 +89,6 @@ blockquote {
 .cloud {
 	width: 100px;
 	height: 100px;
-	color: black;
 	background: url(../img/cloud1.png);
 	background-size:100%;
 	z-index: 10;
@@ -98,7 +97,6 @@ blockquote {
 .cloud2 {
 	width: 110px;
 	height: 110px;
-	color: black;
 	background: url(../img/cloud2.png);
 	background-size:100%;
 	z-index: 10;
@@ -107,7 +105,6 @@ blockquote {
 .cloud3 {
 	width: 110px;
 	height: 110px;
-	color: black;
 	background: url(../img/cloud4.png);
 	background-size:100%;
 	z-index: 10;
@@ -116,7 +113,6 @@ blockquote {
 .castle1 {
 	width: 200px;
 	height: 200px;
-	color: black;
 	background: url(../img/castle1.png);
 	background-size:100%;
 	z-index: 10;
@@ -125,7 +121,6 @@ blockquote {
 .castle2 {
 	width: 200px;
 	height: 200px;
-	color: black;
 	background: url(../img/castle2.png);
 	background-size:100%;
 	z-index: 10;
