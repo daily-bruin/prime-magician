@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic|Open+Sans:800);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic|Open+Sans:800|Dosis:500);
 
 html, body {padding:0;margin:0; text-align:center; font-family: 'Merriweather', serif; font-size: 1em;}
 a {text-decoration:none}
@@ -13,6 +13,7 @@ body {overflow:auto; height:11000px; }
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-style: italic;
   margin-left: 40px;
   margin-right: 40px;
   font-size : 1.1em;
@@ -21,12 +22,14 @@ body {overflow:auto; height:11000px; }
 
 .side-blockquote {
 	width: 30%;
-    font-size: 110%;
-    font-style: italic;
-    float: right;
-    border-left: solid #767676;
-    margin: 1%;
-    padding-left: 2%;
+  font-size: 110%;
+  font-style: italic;
+  float: right;
+  border-left: none;
+  margin: 1%;
+  padding-left: 2%;
+  text-transform: uppercase;
+  text-align: right;
 }
 	
 
@@ -106,7 +109,9 @@ body {overflow:auto; height:11000px; }
 }
 
 #wow1, 
-#night {
+#night,
+#day,
+#photo1 {
 	-moz-animation-duration: 2s;
   -moz-animation-delay: 1.5s;
   -moz-animation-iteration-count: 2;
@@ -136,14 +141,14 @@ body {overflow:auto; height:11000px; }
 #page5 {
 	background-color:white; 
 	background-size: 100%;
-	z-index:6;
+	z-index:10;
 }
 
 #page6 {
 	background-color:white; 
 	background: url(../img/web.magic.6.NB.jpg);
 	background-size: cover;
-	z-index:7;
+	z-index:12;
 }
 
 .cloud1 {
@@ -232,14 +237,24 @@ body {overflow:auto; height:11000px; }
 
 }
 
-/*.column-pic {
-	width: 35%;
-	height: 35%;
-	right:0;
-	bottom:0;
-	z-index: 100;
+#photo1 {
 	background: url(../img/web.magic.10.NB.jpg);
-}*/
+	background-size: 100%;
+	z-index: 11;
+	width: 400px; 
+	height: 550px; 
+	right: 2%;
+}
+
+#photo2 {
+	background: url(../img/web.magic.1.NB.jpg);
+	background-size: 100%;
+	z-index: 50;
+	width: 400px; 
+	height: 550px; 
+	left: 0;
+}
+
 
 /*.sun1 {
 	width: 110px;
