@@ -25,6 +25,10 @@
 <body>
 	<div id="skrollr-body">
 		<div id="preloader"></div>
+
+		<div id="back">
+			<a href="http://graphics.dailybruin.com/prime/winter-2014/" id="prime">« Daily Bruin <em>prime</em> winter 2014 issue</a>
+		</div>
 		
 		<div id="page1" class="centered"
 			data-300="background-size: 100%;"
@@ -47,9 +51,12 @@
 			data-1200="border: 10px solid gray"
 			data-1800="border: 500px solid gray">
 
+
 			<div id="wow1"
 				data-600="display: none;" 
-				data-750="display: block;" style="padding:23%;" class="page-black centered">
+				data-750="display: block;" style="padding:23%;" class="page-black centered"
+				data-1200="display: block;"
+				data-1300="display: none;">
 
 				<p>A small ceramic owl perches on a dimly lit bookshelf as a woman in a shimmering gown shuffles over to whisper in its ear.
 
@@ -72,40 +79,57 @@
 			data-3600="background-color[swing]: rgb(255,255,255);"
 			data-4000="background-color: rgb(0,0,0); ">
 
-			<div id="top-separator"
+			<!-- <div id="top-separator"
 				data-3600="background-color[swing]: rgb(255,255,255);"
 				data-4000="background-color: rgb(0,0,0); ">
-			</div>
+			</div> -->
 
 			<div id="bottom-separator"
 				data-3600="background-color[swing]: rgb(255,255,255);"
 				data-4000="background-color: rgb(0,0,0); ">
 			</div>
 
-			<div class="cloud" 
-				data-1900="bottom[swing]: -200px;right: 5%;"
-				data-3900="bottom: 340px; ">
-			</div>
-			<div class="cloud2 cloud" 
-				data-1900="bottom[swing]: -100px;right: -3%;"
-				data-3900="bottom: 290px; ">
-			</div>
-			<div class="cloud3 cloud" 
-				data-2000="bottom[swing]: -100px;right: 20%;"
-				data-3900="bottom: 200px; ">
-			</div>
-			<div class="castle1" 
-				data-2100="bottom[swing]: -200px;right: 5%;"
-				data-3900="bottom: -20px; ">
-			</div>
-			<div class="castle2" 
-				data-1900="bottom[swing]: -240px;right: 16%;"
-				data-3900="bottom: -80px; ">
-			</div>
-			<div class="castle2" 
-				data-1900="bottom[swing]: -240px;right: -5%;"
-				data-3900="bottom: -80px; ">
-			</div>
+			<span id="day">
+
+				<div class="cloud1" 
+					data-1900="bottom[swing]: -200px;right: 5%;"
+					data-3900="bottom: 340px; ">
+				</div>
+				<div class="cloud2" 
+					data-1900="bottom[swing]: -100px;right: -3%;"
+					data-3900="bottom: 290px; ">
+				</div>
+				<div class="cloud3" 
+					data-2000="bottom[swing]: -100px;right: 20%;"
+					data-3900="bottom: 200px; ">
+				</div>
+				<div class="castle1" 
+					data-2100="bottom[swing]: -200px;right: 5%;"
+					data-3900="bottom: -35px; ">
+				</div>
+				<div class="castle2" 
+					data-1900="bottom[swing]: -240px;right: 16%;"
+					data-3900="bottom: -80px; ">
+				</div>
+				<div class="castle2" 
+					data-1900="bottom[swing]: -240px;right: -5%;"
+					data-3900="bottom: -80px; ">
+				</div>
+			</span>
+			<span id="night">
+				<div class="castle1_"
+					data-4100="bottom[swing]: -35px;right: 5%;"
+					data-4800="bottom: -20px; ">
+				</div>
+				<div class="castle2_"
+					data-4100="bottom[swing]: -80px;right: -5%;"
+					data-4800="bottom: -60px; ">
+				</div>
+				<div class="castle2_"
+					data-4100="bottom[swing]: -80px;right: 16%;"
+					data-4800="bottom: -60px; ">
+				</div>
+			</span>
 
 			<!-- <div class="star1" 
 				data-3900="bottom[swing]: -240px;right: -5%;"
@@ -117,7 +141,7 @@
 				data-2200="bottom[swing]: -200px;right: 0;"
 				data-3300="bottom: 340px; ">
 			</div> -->
-            <blockquote>
+            <blockquote style="padding-top:30px;">
                         "By the time I came along my dad had stepped away from magic, but he still had his whole books of magic and Magicana. I worked my way through that by the time I was 12"
                     </blockquote>
 			<div class="page-black centered" style="padding-left: 6%; padding-right: 35%; padding-top: 3%;"
@@ -306,8 +330,7 @@
 
         <div id="page4" class="centered"
             data-4900="display:none"
-            data-5000="display:block"  
-            data-5005="top[swing]:100%" 
+            data-5000="display:block; top[swing]:100%"
             data-6500="top:0%">
             <div class="page-white centered" style="padding-left: 6%; padding-right: 35%; padding-top: 3%; background:black">
             <p>
@@ -456,21 +479,18 @@
 	    } else {
 	    	$('#page1-d').fadeIn('fast');
 	    }
-	    
+	  });
+	  $(window).scroll(function() {
+	    if ($(this).scrollTop() > 3900) {
+	    	$('#day').fadeOut('fast');
+	    	$('#night').fadeIn('slow');
+	    } else {
+	    	$('#night').fadeOut('fast');
+	    	$('#day').fadeIn('slow');
+	    }
 		});
 		/* Darkness */
-		$(window).scroll(function() {
-	    // if ($(this).scrollTop() > 4050) {
-	    		
-	    //   $('.castle1').css('background', 'url(img/castle1_.png)');
-	    //   $('.castle2').css('background', 'url(img/castle2_.png)');
-	    // } else {
-	    // 	$('.castle1').css('background', 'url(img/castle1.png)');
-	    // 	$('.castle2').css('background', 'url(img/castle2.png)');
-	    	
-	    // }
-	    
-		});
+		
 		// $(window).scroll(function() {
 	 //    if ($(this).scrollTop() > 3300) {
 	 //    		// $('#wow1').addClass(" animated fadeInUp ");

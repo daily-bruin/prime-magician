@@ -37,6 +37,20 @@ blockquote {
 	}
 }
 
+#back {
+	top:0;
+	left:0;
+	z-index:100;
+}
+
+#prime {
+	color: white;
+	background-color: rgba(0,0,0,0.2);
+	font-size: 0.8em;
+	padding: 4px 8px;
+	float: left;
+}
+
 .page-white {
 	color: white;
 	padding-top: 25%;
@@ -73,7 +87,7 @@ blockquote {
 }
 
 #page1 { 
-	background:url('../img/slide1.jpg');
+	background:url('../img/slide1.jpg') no-repeat;
 	/*background-size: 100%;*/
 	z-index:1;
 }
@@ -89,7 +103,8 @@ blockquote {
 
 }
 
-#wow1 {
+#wow1, 
+#night {
 	-moz-animation-duration: 2s;
   -moz-animation-delay: 1.5s;
   -moz-animation-iteration-count: 2;
@@ -127,7 +142,7 @@ blockquote {
 	height: 100px;
 	background: url(../img/cloud1.png);
 	background-size:100%;
-	z-index: 10;
+	z-index: 8;
 }
 
 .cloud2 {
@@ -135,7 +150,7 @@ blockquote {
 	height: 110px;
 	background: url(../img/cloud2.png);
 	background-size:100%;
-	z-index: 10;
+	z-index: 8;
 }
 
 .cloud3 {
@@ -143,7 +158,7 @@ blockquote {
 	height: 110px;
 	background: url(../img/cloud4.png);
 	background-size:100%;
-	z-index: 10;
+	z-index: 8;
 }
 
 .castle1 {
@@ -154,13 +169,38 @@ blockquote {
 	z-index: 10;
 }
 
+.castle1_ {
+	width: 200px;
+	height: 200px;
+	background: url(../img/castle1_.png);
+	background-size:100%;
+	z-index: 10;
+}
+
 .castle2 {
 	width: 200px;
 	height: 200px;
 	background: url(../img/castle2.png);
 	background-size:100%;
-	z-index: 10;
+	z-index: 9;
 }
+
+.castle2_ {
+	width: 200px;
+	height: 200px;
+	background: url(../img/castle2_.png);
+	background-size:100%;
+	z-index: 9;
+}
+
+/*.column-pic {
+	width: 35%;
+	height: 35%;
+	right:0;
+	bottom:0;
+	z-index: 100;
+	background: url(../img/web.magic.10.NB.jpg);
+}*/
 
 /*.sun1 {
 	width: 110px;
