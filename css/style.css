@@ -37,15 +37,15 @@ blockquote {
 	top:0;
 	width: 100%;
 	z-index:20;
-	background-color: black;
+	background-color: white;
 }
 
 #bottom-separator {
 	height: 8%; 
 	bottom:0;
-	width: 100%;
+	width: 68%;
 	z-index:20;
-	background-color: black;
+	background-color: white;
 }
 
 #page1 { 
@@ -126,7 +126,7 @@ blockquote {
 	width: 200px;
 	height: 200px;
 	color: black;
-	background: url(../img/castle5.png);
+	background: url(../img/castle2.png);
 	background-size:100%;
 	z-index: 10;
 }
