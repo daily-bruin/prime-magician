@@ -249,6 +249,14 @@ body {overflow:auto; height:7500px; }
 	left: 0;
 }
 
+#final {
+	background: url(../img/FINAL.jpg);
+	background-size: 100%;
+	/*background-attachment: fixed;*/
+	z-index: 5000;
+	height: 300px;
+	width: 1080px;
+}
 
 /*.sun1 {
 	width: 110px;
