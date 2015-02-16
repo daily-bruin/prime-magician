@@ -164,6 +164,36 @@ blockquote {
 	z-index: 9;
 }
 
+.star1 {
+	width: 32px;
+	height: 32px;
+	background: url(../img/star1.png);
+	background-size:100%;
+	z-index: 8;
+
+}
+
+.star2 {
+	width: 16px;
+	height: 16px;
+	background: url(../img/star2.png);
+	background-size:100%;
+	z-index: 8;
+
+}
+
+.star3 {
+	width: 20px;
+	height: 20px;
+	background: url(../img/star1.png);
+	background-size:100%;
+	-ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+  transform: rotate(20deg);
+	z-index: 8;
+
+}
+
 /*.column-pic {
 	width: 35%;
 	height: 35%;
