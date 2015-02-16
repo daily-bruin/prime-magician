@@ -14,6 +14,20 @@ blockquote {
 	border: none;
 }
 
+#back {
+	top:0;
+	left:0;
+	z-index:100;
+}
+
+#prime {
+	color: white;
+	background-color: rgba(0,0,0,0.2);
+	font-size: 0.8em;
+	padding: 4px 8px;
+	float: left;
+}
+
 .page-white {
 	color: white;
 	padding-top: 25%;
