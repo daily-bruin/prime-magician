@@ -1,4 +1,6 @@
-html, body {padding:0;margin:0; text-align:center; font-family: Helvetica Neue;}
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic|Open+Sans:800);
+
+html, body {padding:0;margin:0; text-align:center; font-family: 'Merriweather', serif; font-size: 1em;}
 a {text-decoration:none}
 body {overflow:auto; height:7600px; }
 
@@ -22,6 +24,28 @@ blockquote {
 	padding-top: 25%;
 	text-align: left;
 	/*padding: 25%;*/
+}
+
+.article {
+	padding-left: 8%; 
+	padding-right: 35%; 
+	padding-top: 8%;
+}
+
+#top-separator {
+	height: 8%; 
+	top:0;
+	width: 100%;
+	z-index:20;
+	background-color: black;
+}
+
+#bottom-separator {
+	height: 8%; 
+	bottom:0;
+	width: 100%;
+	z-index:20;
+	background-color: black;
 }
 
 #page1 { 
