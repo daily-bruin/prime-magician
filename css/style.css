@@ -145,6 +145,14 @@ body {overflow:auto; height:7500px; }
 	z-index:10;
 }
 
+#page7 {
+	background: url(../img/FINAL.jpg);
+	background-attachment: fixed;
+	height:375px;
+	background-size: 100%;
+	z-index:1000;
+}
+
 .cloud1 {
 	width: 100px;
 	height: 100px;
@@ -255,8 +263,30 @@ body {overflow:auto; height:7500px; }
 	/*background-attachment: fixed;*/
 	z-index: 5000;
 	height: 300px;
-	width: 1080px;
+	width: 300px;
 }
+
+.credit1 {
+	bottom: 8%;
+	right: 0;
+	background-color: whitesmoke;
+	color: black;
+	padding: 15px;
+}
+	.credit1 p {
+		position: relative;
+		top: 8px;
+	}
+
+.credit2 {
+	bottom: 2%;
+	right: 0;
+	background-color: whitesmoke;
+	color: black;
+	padding: 2px;
+	font-size: 0.7em;
+}
+	
 
 /*.sun1 {
 	width: 110px;
