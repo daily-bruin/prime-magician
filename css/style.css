@@ -38,15 +38,15 @@ blockquote {
 	top:0;
 	width: 100%;
 	z-index:20;
-	background-color: black;
+	background-color: white;
 }
 
 #bottom-separator {
 	height: 8%; 
 	bottom:0;
-	width: 100%;
+	width: 68%;
 	z-index:20;
-	background-color: black;
+	background-color: white;
 }
 
 #page1 { 
@@ -96,7 +96,6 @@ blockquote {
 .cloud {
 	width: 100px;
 	height: 100px;
-	color: black;
 	background: url(../img/cloud1.png);
 	background-size:100%;
 	z-index: 10;
@@ -105,7 +104,6 @@ blockquote {
 .cloud2 {
 	width: 110px;
 	height: 110px;
-	color: black;
 	background: url(../img/cloud2.png);
 	background-size:100%;
 	z-index: 10;
@@ -114,7 +112,6 @@ blockquote {
 .cloud3 {
 	width: 110px;
 	height: 110px;
-	color: black;
 	background: url(../img/cloud4.png);
 	background-size:100%;
 	z-index: 10;
@@ -123,7 +120,6 @@ blockquote {
 .castle1 {
 	width: 200px;
 	height: 200px;
-	color: black;
 	background: url(../img/castle1.png);
 	background-size:100%;
 	z-index: 10;
@@ -132,8 +128,7 @@ blockquote {
 .castle2 {
 	width: 200px;
 	height: 200px;
-	color: black;
-	background: url(../img/castle5.png);
+	background: url(../img/castle2.png);
 	background-size:100%;
 	z-index: 10;
 }
