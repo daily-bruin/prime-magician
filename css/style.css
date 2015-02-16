@@ -10,24 +10,28 @@ body {overflow:auto; height:10000px; }
 .centered { top:0; bottom:0; left:0; right:0; margin:auto; }
 
 .top-blockquote {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 40px;
-    margin-right: 40px;
-    font-size : 1.2em;
-    border: none;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size : 1.1em;
+  border: none;
 }
 
-blockquote {
+.black-blockquote {
 	width: 30%;
-    font-size: 150%;
-    font-style: italic;
-    float: right;
-    border-left: solid #767676;
-    margin: 1%;
-    padding-left: 2%;
+  font-size: 150%;
+  font-style: italic;
+  float: right;
+  border-left: solid #767676;
+  margin: 1%;
+  padding-left: 2%;
 	
+}
+
+.white-blockquote {
+
 }
 
 @media (max-width: 480px) {
@@ -96,6 +100,8 @@ blockquote {
 	background-color:white; 
 	z-index:2; 
 	border-radius:50%;
+/*	border: none;
+	display:none;*/
 
 	-moz-animation-duration: 2s;
   -moz-animation-delay: 1.5s;
@@ -137,7 +143,7 @@ blockquote {
 	z-index:6;
 }
 
-.cloud {
+.cloud1 {
 	width: 100px;
 	height: 100px;
 	background: url(../img/cloud1.png);
