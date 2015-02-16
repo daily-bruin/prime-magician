@@ -169,7 +169,7 @@
 
 				<p 
 					data-2400="position: relative; bottom: 0px;"
-					data-5375="bottom: 2975px;">
+					data-5000="bottom: 2600px;">
 
           Settled on a hilltop just blocks away from Hollywood Boulevard, the Magic Castle is a relic of the mysteries of the entertainment industry's gilded age.
 
@@ -381,10 +381,13 @@
           <br />
           <br />
 
-          <div class="column-pic">
-             <img src="./img/web.magic.10.NB.jpg" width="35%" height="35%" style="float:right; padding-top: 20px">
-          </div>
-          <div id="photo1" >
+          <!-- <div class="column-pic">
+             <img src="./img/web.magic.10.NB.jpg" width="35%" height="35%" style="float:right; ">
+          </div> -->
+          <div id="photo1" 
+          	data-4450="bottom:20px; opacity[swing]:0;"
+          	data-4550="opacity:1";
+          	data-4950="bottom:50px">
 
         	
         	</div>
@@ -395,10 +398,10 @@
 			</div>
 
 	      <div id="page5" class="centered"
-		      data-6400="display:none"
-		      data-6500="display:block"  
-		      data-6505="top[swing]:100%" 
-		      data-8000="top:0%">
+		      data-5000="display:none"
+		      data-5100="display:block"  
+		      data-5200="top[swing]:100%" 
+		      data-5600="top:0%">
 		      <div class="page-white centered" style="padding-right: 6%; padding-left: 35%; padding-top: 3%; background:black">
 			      <p>
 			      After months of work, and even a trip to a Harvard University library to see original magicians’ advertisements, Sanchez presented her work to the Academy's officials about two years ago. Her meticulous research, as well as an audition, allowed her to gained entry to the club as both a magician and a magical historian.
@@ -445,13 +448,21 @@
 
 			      <br />
 			      <br />
+			      <div id="photo2" 
+	          	data-5600="bottom:-30px opacity[swing]:0;"
+	          	data-5900="opacity:1;"
+	          	data-6300="bottom:0px">
+
+	        	
+	        	</div>
 
 			      </p>
 		      </div>
 
-	      <div class="column-pic">
+
+	      <!-- <div class="column-pic">
 	          <img src="./img/web.magic.1.NB.jpg" width="30%" height="30%" style="float:left; padding-top: 20px">
-	      </div>
+	      </div> -->
 
 	    </div>
 
@@ -494,7 +505,9 @@
 	    if ($(this).scrollTop() > 3400 && $(this).scrollTop() < 4250) {
 	    	$('#day').fadeOut('fast');
 	    	$('#night').fadeIn('slow');
-	    } else {
+	    } 
+	    if ($(this).scrollTop() < 3400 || $(this).scrollTop() > 4300) {
+	    // else {
 	    	$('#night').fadeOut('fast');
 	    	$('#day').fadeIn('slow');
 	    }
@@ -502,12 +515,16 @@
 
 		$(window).scroll(function() {
 	    if ($(this).scrollTop() > 3500) {
-	    	$('.side-blockquote').css('border-left', 'solid white');
+	    	
 	    	$('#b-text').css('color', 'white');
 	    	$('#b-text').text("When people think of magicians, they don’t think of women. If there is a woman, she is getting sawed in half or ripped apart...It seems novel if she gets to be the one performing the magic tricks.");
 
-	    } else {
-	    	$('.side-blockquote').css('border-left', 'solid #767676;');
+	    } 
+	    if ($(this).scrollTop() <= 3500) { 
+	    	
+	    	$('#b-text').css('color', 'black');
+	    	$('#b-text').text("By the time I came along my dad had stepped away from magic, but he still had his whole books of magic and Magicana. I worked my way through that by the time I was 12");
+	    	
 	    	
 	    }
 		});
@@ -517,18 +534,21 @@
 	    	// $('#night').fadeOut('fast');
 	    	$('.side-blockquote').fadeOut('fast');
 	    	$('#night').css('display', 'none');
-	    	$('#photo1').fadeIn('slow');
 	    	
 	    } 
 	    if ($(this).scrollTop() < 4300 && $(this).scrollTop() > 3400) {
 	    	// $('#night').fadeIn('slow');
 	    	$('.side-blockquote').fadeIn('fast');	
 	    	$('#night').css('display', 'block');
-	    	$('#photo1').fadeOut('fast');
 	    }
 		});
-		
-
+		// $(window).scroll(function() {
+		// 	if ($(this).scrollTop() > 4400 && $(this).scrollTop() < 5000) {
+		// 		$('#photo1').fadeIn('slow');
+		// 	} else {
+		// 		$('#photo1').fadeOut('fast');
+		// 	}
+		// });
 	</script>
 </body>
 
