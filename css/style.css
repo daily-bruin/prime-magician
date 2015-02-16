@@ -19,9 +19,9 @@ body {overflow:auto; height:10000px; }
   border: none;
 }
 
-.black-blockquote {
+.side-blockquote {
 	width: 30%;
-  font-size: 150%;
+  font-size: 110%;
   font-style: italic;
   float: right;
   border-left: solid #767676;
@@ -29,10 +29,7 @@ body {overflow:auto; height:10000px; }
   padding-left: 2%;
 	
 }
-
-.white-blockquote {
-
-}
+	
 
 @media (max-width: 480px) {
 	blockquote {
@@ -70,7 +67,7 @@ body {overflow:auto; height:10000px; }
 
 .article {
 	padding-left: 8%; 
-	padding-right: 35%; 
+	padding-right: 40%; 
 	padding-top: 8%;
 }
 
