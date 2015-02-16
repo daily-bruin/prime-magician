@@ -21,7 +21,7 @@ body {overflow:auto; height:10000px; }
 
 blockquote {
 	width: 30%;
-    font-size: 150%;
+    font-size: 110%;
     font-style: italic;
     float: right;
     border-left: solid #767676;
@@ -137,7 +137,7 @@ blockquote {
 	z-index:6;
 }
 
-.cloud {
+.cloud1 {
 	width: 100px;
 	height: 100px;
 	background: url(../img/cloud1.png);
